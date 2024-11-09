@@ -1,0 +1,10 @@
+n = int(input())
+ldx, ldy, rux, ruy = map(int,input().split())
+print(((rux-ldx)+(ruy-ldy))*2)
+for i in range(n-1):
+    a, b, c, d = map(int,input().split())
+    ldx = min(ldx, a)
+    ldy = min(ldy, b)
+    rux = max(rux, c)
+    ruy = max(ruy, d)
+    print(((rux-ldx)+(ruy-ldy))*2)
